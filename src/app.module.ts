@@ -5,7 +5,7 @@ import { TaskModule } from './task/task.module';
 import { MongooseModule } from '@nestjs/mongoose';
 
 @Module({
-  imports: [TaskModule, MongooseModule.forRoot('mongodb+srv://hyhyhyhyhyhy:mydatabasepassword@cluster0.egkggcm.mongodb.net/?retryWrites=true&w=majority')],
+  imports: [TaskModule, MongooseModule.forRoot('mongodb+srv://<username>:<password>@cluster0.egkggcm.mongodb.net/?retryWrites=true&w=majority')],
   controllers: [AppController],
   providers: [AppService],
 })
